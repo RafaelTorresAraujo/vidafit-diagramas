@@ -1,0 +1,43 @@
+classDiagram
+    class Usuario {
+        +String nome
+        +String email
+        +String senha
+        +login()
+        +logout()
+    }
+
+    class Atividade {
+        +String tipo
+        +Date data
+        +int duracao
+        +String intensidade
+        +registrarAtividade()
+        +editarAtividade()
+        +excluirAtividade()
+    }
+
+    class Progresso {
+        +int totalAtividades
+        +double tempoTotal
+        +gerarResumoSemanal()
+        +exibirGraficos()
+    }
+
+    class Lembrete {
+        +Date horario
+        +String mensagem
+        +ativarNotificacao()
+        +cancelarNotificacao()
+    }
+
+    class Historico {
+        +List<Atividade> atividades
+        +visualizarHistorico()
+        +filtrarPorData()
+    }
+
+    Usuario "1" --> "muitos" Atividade : registra >
+    Atividade "1" --> "1" Lembrete : gera >
+    Usuario "1" --> "1" Progresso : acompanha >
+    Usuario "1" --> "1" Historico : consulta >
