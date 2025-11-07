@@ -1,13 +1,13 @@
-# 🏋️‍♀️ Projeto VidaFit
+#  Projeto VidaFit
 
-## 👥 Equipe
+##  Equipe
 - Rafael Torres de Araujo  
 - Danilo Rodrigues  
  -David Ribeiro
 
 ---
 
-## 💡 Descrição do App
+##  Descrição do App
 
 O **VidaFit** é um aplicativo focado em **saúde e bem-estar**, criado para ajudar usuários a manter uma rotina equilibrada de atividades físicas.  
 Ele permite registrar treinos, acompanhar o progresso semanal e receber lembretes automáticos, incentivando a constância e o autocuidado.
@@ -16,7 +16,7 @@ O objetivo principal é **motivar o usuário** por meio de um design simples, no
 
 ---
 
-## 🎯 Funcionalidades Principais
+##  Funcionalidades Principais
 - Registrar atividades físicas (tipo, duração e data)  
 - Receber lembretes automáticos e personalizados  
 - Visualizar progresso e conquistas semanais  
@@ -25,7 +25,7 @@ O objetivo principal é **motivar o usuário** por meio de um design simples, no
 
 ---
 
-## 📊 Diagramas do Projeto
+##  Diagramas do Projeto
 
 ### 🔹 [Histórias de Usuário – VidaFit](https://github.com/RafaelTorresAraujo/vidafit-diagramas/blob/main/HistoriasDeUsuario_VidaFit.mmd)
 Representa as principais necessidades do usuário e o fluxo de valor dentro do app.
@@ -38,7 +38,7 @@ Apresenta as interações entre o usuário e o sistema VidaFit.
 
 ---
 
-## 🚀 Objetivo Geral
+##  Objetivo Geral
 Facilitar o acompanhamento de hábitos saudáveis e o gerenciamento de atividades físicas diárias, incentivando o bem-estar e a consistência. 
 
 ---
