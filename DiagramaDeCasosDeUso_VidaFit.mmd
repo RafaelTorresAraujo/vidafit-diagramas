@@ -1,15 +1,33 @@
-%% Diagrama de Casos de Uso — App VidaFit %%
-graph TD
-    A[Usuário] --> B((Registrar atividade física))
-    A --> C((Visualizar progresso semanal))
-    A --> D((Receber lembretes personalizados))
-    A --> E((Editar ou excluir atividades))
-    A --> F((Consultar histórico de atividades))
+```mermaid
+classDiagram
+    class Usuario {
+        +String nome
+        +String email
+        +String senha
+        +login()
+        +registrarAtividade()
+    }
 
-    subgraph VidaFit
-        B
-        C
-        D
-        E
-        F
-    end
+    class Atividade {
+        +String tipo
+        +Date data
+        +Double duracao
+        +Double calorias
+        +calcularCalorias()
+    }
+
+    class Progresso {
+        +Double pesoInicial
+        +Double pesoAtual
+        +calcularEvolucao()
+    }
+
+    class Notificacao {
+        +String mensagem
+        +Date horario
+        +enviarLembrete()
+    }
+
+    Usuario "1" --> "muitos" Atividade
+    Usuario "1" --> "1" Progresso
+    Usuario "1" --> "muitos" Notificacao
