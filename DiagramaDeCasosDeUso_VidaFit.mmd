@@ -1,18 +1,15 @@
-usecaseDiagram
-    title Diagrama de Casos de Uso — App VidaFit
+%% Diagrama de Casos de Uso — App VidaFit %%
+graph TD
+    A[Usuário] --> B((Registrar atividade física))
+    A --> C((Visualizar progresso semanal))
+    A --> D((Receber lembretes personalizados))
+    A --> E((Editar ou excluir atividades))
+    A --> F((Consultar histórico de atividades))
 
-    actor "Usuário" as U
-
-    rectangle VidaFit {
-        usecase "Registrar atividade física" as UC1
-        usecase "Visualizar progresso semanal" as UC2
-        usecase "Receber lembretes personalizados" as UC3
-        usecase "Editar ou excluir atividades" as UC4
-        usecase "Consultar histórico de atividades" as UC5
-    }
-
-    U --> UC1 : registra dados
-    U --> UC2 : acompanha evolução
-    U --> UC3 : recebe notificações
-    U --> UC4 : gerencia registros
-    U --> UC5 : visualiza histórico
+    subgraph VidaFit
+        B
+        C
+        D
+        E
+        F
+    end
