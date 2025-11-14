@@ -1,9 +1,3 @@
-
----
-
-# 📄 **Arquivo 2 — `diagrama-estados-treino.md`**
-
-```md
 # Diagrama de Estados – Ciclo de Vida do Treino
 
 ```mermaid
